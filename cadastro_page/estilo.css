@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background: linear-gradient(45deg, #1a1191, #a7a6a3, #645555);
+    background-size: 400% 400%;
+    animation: mygradient 18s ease infinite;
+}
+
+@keyframes mygradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.ajustar{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background-color: aliceblue;
+    padding: 25px 30px;
+    border-radius: 12px;
+}
+
+.container .titulo{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .titulo::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #47ad2e;
+}
+
+.container form .detalhes-usuario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .detalhes-usuario .dentro-box{
+    margin: 10px 0 12px 0px;
+    width: calc(100% / 2 - 20px);
+}
+
+.detalhes-usuario .dentro-box .detalhes{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.detalhes-usuario .dentro-box input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgb(76, 45, 10);
+    padding: 3px;
+    font-size: 16px;
+    border-bottom-width: 3px;
+    transition: all 0.2s ease;
+}
+
+.detalhes-usuario .dentro-box input:focus,
+.detalhes-usuario .dentro-box input:valid{
+    border-color: #7cad2e;
+}
+/*efeito muda cor quando clicado*/
+
+form .genero-detalhes .genero-titulo{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .genero-detalhes .categoria{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+form .genero-detalhes .categoria label{
+    display: flex;
+    align-items: center;
+}
+
+form .genero-detalhes .categoria .ponto{
+    height: 18px;
+    width: 18px;
+    background: #cacaca;
+    border-radius: 50%;
+    margin: 10px;
+    border: 2px solid #d8b61f;
+    transition: all 0.5s ease;
+}
+
+#pontoh:checked ~ .categoria label .man,
+#pontom:checked ~ .categoria label .girl{
+    border-color: #5ccf19;
+    background: #a10707;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .botao{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .botao input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #362ead;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-image: linear-gradient(45deg, #47ad2e 20%, #dace2d 60%, #cf1919 80%);
+    border-radius: 12px;
+}
+
+form .botao input:hover{
+    background: #7cad2e60;
+}
+
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .detalhes-usuario .dentro-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .genero-detalhes .categoria{
+        width: 100%;
+    }
+    .container form .detalhes-usuario{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .detalhes-usuario::-webkit-scrollbar{
+        width: 0;
+    }
+}
+/*quando houver overflow no eixo designado cria-se uma rolagem, com o webkit a bagaça fica responsiva use sempre essa config*/
+
+#saudacao{
+    text-align: center;
+    color: #362ead;
+}
+
+/*config menu*/
+a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: 1s;
+    font-size: 1.3rem;
+}
+
+a:hover {
+    opacity: 0.9;
+    color: red;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9ba5c;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/*responsividade*/
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 3px;
+    background: green;
+    margin: 9px;
+    transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #680d68;
+        color: #e9ba5c;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 1;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+/*ufa*/
+
+@keyframes navlinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* xzinho do menu*/
+
+.mobile-menu.active .linha1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .linha2{
+    opacity: 0;
+}
+
+.mobile-menu.active .linha3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+/*fim menu*/
+
+

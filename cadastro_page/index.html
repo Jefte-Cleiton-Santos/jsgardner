@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+    
+    <header>
+        <h2 id="saudacao">Cadastro</h2>
+    
+        <nav>
+            <a href="#" class="logo">jsdeveloper</a>
+
+            <ul class="nav-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="../portifolio/index.html">Portifólio</a></li>
+                <li><a href="../contatos_page/index.html">Contatos</a></li>
+                <li><a href="../login/index.html">Login</a></li>
+                <li><a href="../index.html">JS Store</a></li>
+                
+            </ul>
+    
+            <div class="mobile-menu">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+    
+        </nav>
+    
+        <main></main>
+        </header>
+        <br>
+
+<div class="ajustar">
+
+<div class="container">
+    <div class="titulo">Cadastre-se</div>
+
+    <form action="#"><!--nesse link para onde vai esse forme-->
+        <div class="detalhes-usuario">
+
+            <div class="dentro-box">
+                <span class="detalhes">Nome</span>
+                <input type="text" placeholder="Digite seu nome" required>
+            </div>
+
+    <div class="dentro-box">
+        <span class="detalhes">Sobrenome</span>
+        <input type="text" placeholder="Digite seu Sobrenome" required>
+    </div>
+
+    <div class="dentro-box">
+        <span class="detalhes">Idade</span>
+        <input type="number" placeholder="Digite sua Idade" required>
+    </div>
+
+    <div class="dentro-box">
+        <span class="detalhes">Nome de Usuario</span>
+        <input type="text" placeholder="Escolha nome + 3 numeros" required>
+    </div>
+
+    <div class="dentro-box">
+        <span class="detalhes">Email</span>
+        <input type="email" placeholder="Digite seu Email" required>
+    </div>
+
+    <div class="dentro-box">
+        <span class="detalhes">Telefone</span>
+        <input type="number" name="telefone" placeholder="Número de Telefone" required>
+    </div>
+
+    <div class="dentro-box">
+        <span class="detalhes">Senha</span>
+        <input type="password" autocomplete="current-password" id="psw" placeholder="Digite sua Senha" name="psw" maxlength="8" minlength="6" size="8" required>
+    </div>
+
+    <div class="dentro-box">
+        <span class="detalhes">Comfirme Senha</span>
+        <input type="password" autocomplete="new-password" id="psw" name="psw" placeholder="Digite Novamente sua Senha" maxlength="8" minlength="6" required>
+    </div>
+
+    <div class="genero-detalhes">
+    <!--dot one (um ponto)-->
+
+        <input type="radio" name="genero" id="pontoh">
+        <input type="radio" name="genero" id="pontom">
+
+        <span class="genero-titulo">Gênero</span>
+        <div class="categoria">
+            <label for="pontoh">
+                <span class="ponto man"></span>
+                <span class="genero">Homem</span>
+            </label>
+
+            <label for="pontom">
+                <span class="ponto girl"></span>
+                <span class="genero">Mulher</span>
+            </label>
+        </div>
+    </div>
+ </div>
+
+            <div class="botao">
+                <input type="submit" | value="Registrar-se">
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script src="../menu/mobilemenu.js"></script>
+
+</body>
+</html>

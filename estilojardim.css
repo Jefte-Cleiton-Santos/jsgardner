@@ -1,0 +1,137 @@
+
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Paleta de cores*/
+
+:root {
+    --cor0: #078f29;
+    --cor1: #0c2fa0d3;
+    --cor2: #e6cc38;
+    --cor3: #800909;
+    --cor4: #0a0a0ae0;
+    --cor5: #6f6f7081;
+}
+
+@media(max-width: 1024px){
+    .containerpai{
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px){
+    .containerpai{
+        width: 100%;
+    }
+}
+
+@media(max-width: 725px){
+    .containerpai{
+        width: 100%;
+    }
+}
+
+@media(max-width: 470px){
+    .containerpai{
+        width: 100%;
+    }
+}
+
+body {
+    background-image: url('./midias/fundogardem.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: var(--cor3);
+    text-align: center;
+    margin: 50px;
+    font-size: 40px;
+    background: var(--cor5);
+}
+
+h2 {
+    color: var(--cor3);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.containerpai {
+    height: 100vh;
+}
+
+main p {
+    height: 350px;
+    margin: 20px;
+    padding: 20px;
+    text-indent: 15px;
+    background: var(--cor5);
+    color: var(--cor4);
+    font-size: 20px;
+}
+
+.marketing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: var(--cor5);
+    height: 550px;
+    margin-top: 40px;
+    align-items: center;
+    align-content: center;
+}
+
+.marketing p {
+    text-indent: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.marketing h2{
+    margin: 20px;
+}
+
+#gardner {
+    width: 320px;
+    height: 250px;
+    margin: 0px 0px 0px 20px;
+}
+
+.midias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+    padding: 10px;
+}
+
+.midias img {
+    width: 350px;
+    height: 250px;
+}
+
+#enfase {
+    text-align: center;
+    color: var(--cor3);
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 350px;
+    background: var(--cor4);
+    text-indent: 15px;
+    padding: 20px;
+    color: beige;
+}
+
+/*pausa new idea #agoravai, e ainda existe fdp que me chama de vagabundo como se essa poha não desse trabalho pra estudar e desenvolver*/
