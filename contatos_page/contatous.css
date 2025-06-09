@@ -127,9 +127,9 @@ main {
 /*amem*/
 
 body{
-    
-    
-    background: linear-gradient(90deg, #40277ac0 0%, #2b369996 30%,#459eb96b 30%, rgba(231, 204, 83, 0.76) 100%);
+    background-image: url("../imagemsite/fundo1js.jpg");
+    /*
+    background: linear-gradient(90deg, #40277ac0 0%, #2b369996 30%,#459eb96b 30%, rgba(231, 204, 83, 0.76) 100%);*/
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
