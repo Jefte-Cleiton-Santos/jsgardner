@@ -37,7 +37,6 @@ nav {
 }
 
 main {
-    background-color: #cfcfcf;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -128,7 +127,7 @@ main {
 /*amem*/
 
 body{
-    background-image: url("../imagemsite/fundo1js.jpg");
+    background-image: url("../assets/img/fundo2js.jpg");
     /*
     background: linear-gradient(90deg, #40277ac0 0%, #2b369996 30%,#459eb96b 30%, rgba(231, 204, 83, 0.76) 100%);*/
     background-repeat: no-repeat;
