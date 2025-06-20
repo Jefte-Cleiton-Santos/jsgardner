@@ -89,6 +89,13 @@ main p {
     align-content: center;
 }
 
+.marketing img {
+    margin:10px;
+}
+.marketing {
+    margin: 10px;
+}
+
 .marketing p {
     text-indent: 15px;
     margin: 10px;
