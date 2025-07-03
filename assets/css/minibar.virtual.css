@@ -797,3 +797,9 @@
 .theme-purple .post-grid .post-category {
     color: #6f42c1;
 }
+
+.wannfuckyou img{
+    width: 100%;
+    height: 300%;
+    object-fit: cover;
+}
